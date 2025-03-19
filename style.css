@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/* ---- Layout ---- */
+
+.left {
+  flex: 1;
+}
+
+.dashboard, a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link-list-one {
+  margin-block: 65px;
+}
+
+.link {
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 10px;
+}
+
+.right {
+  flex: 4;
+}
+
+.top-header,
+.left-top-header,
+.profile-link-container,
+.bottom-header,
+.left-bottom-header,
+.right-bottom-header,
+.posting-links {
+  align-items: center;
+}
+
+.top-header {
+  justify-content: space-between;
+}
+
+.left-top-header {
+  flex: 2;
+}
+
+.profile-link {
+  display: flex;
+}
+
+.bottom-header {
+  justify-content: space-between;
+}
+
+/* ---- Typography ---- */
+
+* {
+  font-family: "Roboto";
+}
+
+.left {
+  color: white;
+}
+
+ul {
+  font-size: clamp(0.75rem, 2vw, 1.25rem);
+  font-weight: 500;
+}
+
+h2 {
+  font-size: clamp(1rem, 2.5vw, 2.25rem)
+}
+
+.profile-link {
+  font-size: 20px;
+}
+
+.profile-txt {
+  font-size: 12px;
+}
+
+.right-name,
+.post {
+  font-size: clamp(.7rem, 1.6vw, 1rem);
+}
+
+.post {
+  color: white;
+  font-weight: 400;
+}
+
+.post-list {
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
+}
+
+/* ---- Design ---- */
+
+.header {
+  box-shadow: 0px 2px 5px rgba(88, 88, 88, 0.321);
+}
+
+.left {
+  background-color: rgb(27, 157, 218);
+  padding: 15px;
+  height: 100vh;
+}
+
+svg {
+  fill: white;
+  width: clamp(0.75rem, 2vw, 1.25rem);
+  margin-right: 20px;
+}
+
+.dashboard-svg {
+  width:  clamp(1.5rem, 3vw, 2.75rem);
+}
+
+a:hover,
+a:focus,
+.magnify:hover,
+.maginu:focus,
+.post-list:hover,
+.post-list:focus,
+.bell:hover,
+.bell:focus,
+.profile-img-small:hover,
+.profile-img-small:focus {
+  opacity: .8;
+  cursor: pointer;
+}
+
+a:active {
+  opacity: .6;
+}
+
+.magnify,
+.bell {
+  fill: black;
+}
+
+.bell {
+  margin-right: 15px;
+}
+
+.top-header {
+  padding: 15px 45px 10px 45px;
+}
+
+.profile-img-small {
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.magnify {
+  margin-right: 20px;
+  margin-top: 4px;
+  width: 23px;
+}
+
+#search {
+  background-color: rgb(235, 235, 235);
+  width: 75%;
+  border: none;
+  border-radius: 20px;
+  height: 25px;
+  padding: 5px 10px;
+}
+
+#search:focus {
+  border: none;
+  outline: none;
+}
+
+.profile-img-big {
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+
+.bottom-header {
+  padding: 0px 45px 10px 45px;
+}
+
+.post-list {
+  background-color: rgb(27, 157, 218);
+  height: 30px;
+  width: 90px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
